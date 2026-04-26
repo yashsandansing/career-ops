@@ -180,10 +180,12 @@ Each URL gets a verdict: `active`, `expired`, or `uncertain` with a reason.
 
 ## scan
 
-Zero-token portal scanner. Hits ATS APIs (Greenhouse, Ashby, Lever) and career pages directly — no LLM tokens consumed. Reads `portals.yml` for target companies and search queries, outputs matching listings to stdout and optionally appends to `data/pipeline.md`.
+Zero-token portal scanner. Hits ATS APIs (Greenhouse, Ashby, Lever, Workday) and career pages directly — no LLM tokens consumed. Reads `portals.yml` for target companies and search queries, outputs matching listings to stdout and optionally appends to `data/pipeline.md`.
 
 ```bash
 npm run scan
 ```
+
+**Workday pagination:** Workday portals are fetched page-by-page up to `MAX_PAGES` (default: 20) pages. A low value here produces a shallow scan — increase it in `scan.mjs` if you suspect results are being cut off for large Workday portals.
 
 **Exit codes:** `0` scan completed, `1` configuration error or no portals.yml found.

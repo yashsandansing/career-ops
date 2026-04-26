@@ -147,7 +147,7 @@ async function fetchWorkdayJobs(apiUrl, companyName, locale = 'en-US') {
   let offset = 0;
   let total = null;
   let pageCount = 0;
-  const MAX_PAGES = 2;
+  const MAX_PAGES = 20;
 
   while (total === null || offset < total) {
     const controller = new AbortController();
@@ -168,12 +168,18 @@ async function fetchWorkdayJobs(apiUrl, companyName, locale = 'en-US') {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       data = await res.json();
+    } catch (err) {
+      // Return partial results collected so far; surface the error only if nothing was fetched.
+      if (jobs.length === 0) throw err;
+      console.warn(`Workday ${companyName}: partial results (${jobs.length} jobs) — ${err.message}`);
+      break;
     } finally {
       clearTimeout(timer);
     }
 
+    // Workday API only returns the correct total on the first fetch; subsequent pages always return 0.
     const responseTotal = data.total ?? data.totalJobPostings;
-    if (total === null && Number.isFinite(responseTotal) && responseTotal > 0) {
+    if (total === null && Number.isFinite(responseTotal)) {
       total = responseTotal;
     }
 
