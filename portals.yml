@@ -25,6 +25,7 @@ title_filter:
     # -- Software / Backend Engineering --
     - "Software Engineer"
     - "Software Developer"
+    - "Software Development Engineer"
     - "Backend Engineer"
     - "Backend Developer"
     - "Full Stack Engineer"
@@ -57,7 +58,7 @@ title_filter:
     - "Lead "
     - "Manager"
     - "Director"
-    - "VP "
+    - "VP"
     - "Vice President"
     - ".NET"
     - "iOS"
@@ -140,141 +141,140 @@ search_queries:
 
 # -- Tracked companies --
 # Companies whose career pages are checked directly.
-# scan_method: playwright (default), websearch, greenhouse_api
+# scan_method: playwright (default), playwright, greenhouse_api
 
 tracked_companies:
 
   # ── H1B Top 100 — Big Tech ────────────────────────────────────────────
 
   - name: Google
-    careers_url: https://careers.google.com
-    scan_method: websearch
-    scan_query: 'site:careers.google.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
+    careers_url: https://www.google.com/about/careers/applications/jobs/results?src=Online%2FSocial%2FGoogler_share&q=%22software%20engineer%22%20OR%20%22AI%20engineer%22%20OR%20%22Machine%20Learning%20Engineer%22%20OR%20%22Software%20Developer%22%20OR%20%22Software%20Development%20Engineer%22&location=United%20States&degree=MASTERS&degree=BACHELORS&degree=ASSOCIATE&employment_type=INTERN&employment_type=TEMPORARY&employment_type=FULL_TIME&employment_type=PART_TIME&sort_by=date&target_level=MID&target_level=EARLY&page=1
+    scan_method: playwright
     notes: "Top H1B sponsor. Search, Cloud, AI."
     enabled: true
 
   - name: Microsoft
     careers_url: https://careers.microsoft.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.microsoft.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Azure, Copilot, Office."
     enabled: true
 
   - name: Amazon
     careers_url: https://amazon.jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:amazon.jobs "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. AWS, Alexa, retail tech."
     enabled: false
 
   - name: Apple
     careers_url: https://apple.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:apple.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. iOS, macOS, AI/ML."
     enabled: true
 
   - name: Meta
     careers_url: https://metacareers.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:metacareers.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. AI Research, WhatsApp, Instagram."
     enabled: false
 
   - name: NVIDIA
     careers_url: https://nvidia.com/en-us/about-nvidia/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:nvidia.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. GPUs, CUDA, AI infrastructure."
     enabled: true
 
   - name: Intel
     careers_url: https://jobs.intel.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.intel.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Chips, AI accelerators."
     enabled: true
 
   - name: Adobe
     careers_url: https://adobe.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:adobe.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Creative Cloud, Firefly AI."
     enabled: true
 
   - name: Oracle
     careers_url: https://oracle.com/corporate/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:oracle.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Cloud, database, enterprise SaaS."
     enabled: true
 
   - name: IBM
     careers_url: https://ibm.com/employment
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:ibm.com/employment "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Watson, cloud, enterprise."
     enabled: true
 
   - name: VMware
     careers_url: https://careers.vmware.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.vmware.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Now Broadcom VMware. Cloud infra."
     enabled: true
 
   - name: Cisco
     careers_url: https://jobs.cisco.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.cisco.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Networking, security, WebEx AI."
     enabled: true
 
   - name: ServiceNow
     careers_url: https://careers.servicenow.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.servicenow.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Enterprise workflow + AI platform."
     enabled: true
 
   - name: Uber
     careers_url: https://uber.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:uber.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Marketplace, Maps, AI/ML."
     enabled: true
 
   - name: LinkedIn
     careers_url: https://careers.linkedin.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.linkedin.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Microsoft subsidiary. Professional network."
     enabled: true
 
   - name: PayPal
     careers_url: https://paypal.com/us/webapps/mpp/jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:paypal.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Payments, fintech."
     enabled: true
 
   - name: Qualcomm
     careers_url: https://qualcomm.com/company/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:qualcomm.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Mobile chips, AI on-device."
     enabled: true
 
   - name: Twitter / X
     careers_url: https://x.com/jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: '"x.com/jobs" OR "twitter" "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Social platform."
     enabled: true
 
   - name: Airbnb
     careers_url: https://careers.airbnb.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.airbnb.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Travel marketplace."
     enabled: true
@@ -283,77 +283,77 @@ tracked_companies:
 
   - name: JPMorgan Chase
     careers_url: https://careers.jpmorgan.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.jpmorgan.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Banking, fintech, AI trading."
     enabled: true
 
   - name: Goldman Sachs
     careers_url: https://goldmansachs.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:goldmansachs.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Investment banking, quant."
     enabled: true
 
   - name: Morgan Stanley
     careers_url: https://morganstanley.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:morganstanley.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Investment banking, wealth management."
     enabled: true
 
   - name: Bank of America
     careers_url: https://careers.bankofamerica.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.bankofamerica.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Consumer & commercial banking."
     enabled: true
 
   - name: Visa
     careers_url: https://visa.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:visa.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Payments network."
     enabled: true
 
   - name: Mastercard
     careers_url: https://mastercard.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:mastercard.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Payments network."
     enabled: true
 
   - name: Capital One
     careers_url: https://capitalonecareers.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:capitalonecareers.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Tech-forward bank."
     enabled: true
 
   - name: American Express
     careers_url: https://careers.americanexpress.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.americanexpress.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Payments, financial services."
     enabled: true
 
   - name: Citigroup
     careers_url: https://careers.citigroup.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.citigroup.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Global banking."
     enabled: true
 
   - name: Wells Fargo
     careers_url: https://wellsfargo.com/about/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:wellsfargo.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Consumer banking."
     enabled: true
 
   - name: BlackRock
     careers_url: https://careers.blackrock.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.blackrock.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Asset management, Aladdin platform."
     enabled: true
@@ -362,7 +362,7 @@ tracked_companies:
 
   - name: Stripe
     careers_url: https://stripe.com/jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:stripe.com/jobs "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Payments infrastructure."
     enabled: true
@@ -383,28 +383,28 @@ tracked_companies:
 
   - name: Deloitte
     careers_url: https://careers.deloitte.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.deloitte.com "Software Engineer" OR "AI Engineer" OR "ML Engineer" OR "Full Stack"'
     notes: "Top H1B sponsor. Consulting, tech advisory."
     enabled: true
 
   - name: McKinsey
     careers_url: https://mckinsey.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:mckinsey.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer" OR "Full Stack"'
     notes: "Top H1B sponsor. Consulting + QuantumBlack AI."
     enabled: true
 
   - name: Boston Consulting Group
     careers_url: https://bcg.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:bcg.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer" OR "Full Stack"'
     notes: "Top H1B sponsor. Consulting + BCG X AI."
     enabled: true
 
   - name: Accenture
     careers_url: https://accenture.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:accenture.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer" OR "Full Stack"'
     notes: "Top H1B sponsor. Consulting + technology services."
     enabled: true
@@ -413,14 +413,14 @@ tracked_companies:
 
   - name: Salesforce
     careers_url: https://careers.salesforce.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.salesforce.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Agentforce AI platform."
     enabled: true
 
   - name: Netflix
     careers_url: https://explore.jobs.netflix.net/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:explore.jobs.netflix.net "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer" OR "Staff Engineer"'
     notes: "Top H1B sponsor. Streaming, recommendation systems. Uses Eightfold AI (not Greenhouse)."
     enabled: true
@@ -432,14 +432,14 @@ tracked_companies:
 
   - name: Slack
     careers_url: https://slack.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:slack.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Salesforce subsidiary."
     enabled: true
 
   - name: Block (Square)
     careers_url: https://careers.block.xyz
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.block.xyz "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Payments, Cash App, Bitcoin."
     enabled: true
@@ -452,21 +452,21 @@ tracked_companies:
 
   - name: Twilio
     careers_url: https://www.twilio.com/en-us/company/jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:twilio.com/company/jobs "Software Engineer" OR "AI Engineer" OR "Backend Engineer"'
     notes: "Top H1B sponsor. Voice/messaging infrastructure."
     enabled: true
 
   - name: Zoom
     careers_url: https://zoom.us/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:zoom.us/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Video comms + AI."
     enabled: true
 
   - name: Atlassian
     careers_url: https://atlassian.com/company/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:atlassian.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Jira, Confluence, dev tools."
     enabled: true
@@ -479,42 +479,42 @@ tracked_companies:
 
   - name: Dell Technologies
     careers_url: https://jobs.dell.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.dell.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Enterprise hardware + cloud."
     enabled: true
 
   - name: HP
     careers_url: https://jobs.hp.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.hp.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. PCs, printers, enterprise."
     enabled: true
 
   - name: AMD
     careers_url: https://amd.com/en/corporate/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:amd.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. CPUs, GPUs, AI chips."
     enabled: true
 
   - name: SAP
     careers_url: https://careers.sap.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.sap.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Enterprise ERP + AI."
     enabled: true
 
   - name: Workday
     careers_url: https://workday.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:workday.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. HR/Finance cloud SaaS."
     enabled: true
 
   - name: Snowflake
     careers_url: https://careers.snowflake.com/us/en/search-results
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.snowflake.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer" OR "Staff Engineer"'
     notes: "Top H1B sponsor. Cloud data platform. Uses Workday (not Greenhouse)."
     enabled: true
@@ -538,28 +538,28 @@ tracked_companies:
 
   - name: Reddit
     careers_url: https://redditinc.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:redditinc.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Social platform."
     enabled: true
 
   - name: Snap
     careers_url: https://snap.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:snap.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Snapchat, AR, AI camera."
     enabled: true
 
   - name: DocuSign
     careers_url: https://docusign.com/company/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:docusign.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. eSignature + AI contracts."
     enabled: true
 
   - name: Splunk
     careers_url: https://splunk.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:splunk.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Now Cisco subsidiary. Observability."
     enabled: true
@@ -572,7 +572,7 @@ tracked_companies:
 
   - name: Shopify
     careers_url: https://www.shopify.com/careers/search
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:shopify.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer" OR "Staff Engineer"'
     notes: "Top H1B sponsor. E-commerce platform. Uses proprietary careers site (not Greenhouse)."
     enabled: true
@@ -585,21 +585,21 @@ tracked_companies:
 
   - name: Unity
     careers_url: https://unity.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:unity.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Game engine, real-time 3D."
     enabled: true
 
   - name: Cloudflare
     careers_url: https://cloudflare.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:cloudflare.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. CDN, security, AI Workers."
     enabled: true
 
   - name: Roku
     careers_url: https://roku.com/jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:roku.com/jobs "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Streaming platform."
     enabled: true
@@ -612,7 +612,7 @@ tracked_companies:
 
   - name: Zendesk
     careers_url: https://www.zendesk.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:zendesk.wd1.myworkdayjobs.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer" OR "Staff Engineer"'
     notes: "Top H1B sponsor. Customer service + AI. Uses Workday (not Greenhouse)."
     enabled: true
@@ -621,14 +621,14 @@ tracked_companies:
 
   - name: Disney
     careers_url: https://jobs.disneycareers.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.disneycareers.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Streaming, parks, media tech."
     enabled: true
 
   - name: Warner Bros Discovery
     careers_url: https://careers.wbd.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.wbd.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Streaming, media tech."
     enabled: true
@@ -637,28 +637,28 @@ tracked_companies:
 
   - name: Comcast
     careers_url: https://jobs.comcast.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.comcast.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Cable, NBCUniversal, AI."
     enabled: true
 
   - name: AT&T
     careers_url: https://att.jobs
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:att.jobs "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Telecom."
     enabled: true
 
   - name: Verizon
     careers_url: https://verizon.com/about/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:verizon.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Telecom."
     enabled: true
 
   - name: T-Mobile
     careers_url: https://t-mobile.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:t-mobile.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Telecom."
     enabled: true
@@ -667,49 +667,49 @@ tracked_companies:
 
   - name: UnitedHealth Group
     careers_url: https://careers.unitedhealthgroup.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.unitedhealthgroup.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Health insurance + Optum tech."
     enabled: true
 
   - name: CVS Health
     careers_url: https://jobs.cvshealth.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.cvshealth.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Healthcare + pharmacy."
     enabled: true
 
   - name: Johnson & Johnson
     careers_url: https://careers.jnj.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.jnj.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. MedTech + pharma."
     enabled: true
 
   - name: Pfizer
     careers_url: https://pfizer.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:pfizer.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Pharma + digital health AI."
     enabled: true
 
   - name: Merck
     careers_url: https://jobs.merck.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.merck.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Pharma + biotech."
     enabled: true
 
   - name: Bristol Myers Squibb
     careers_url: https://careers.bms.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.bms.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Pharma + oncology AI."
     enabled: true
 
   - name: AbbVie
     careers_url: https://abbvie.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:abbvie.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Biopharmaceutical."
     enabled: true
@@ -718,42 +718,42 @@ tracked_companies:
 
   - name: General Electric
     careers_url: https://ge.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:ge.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. GE Aerospace, GE Vernova."
     enabled: true
 
   - name: Siemens
     careers_url: https://jobs.siemens.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.siemens.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Industrial automation, digital twin."
     enabled: true
 
   - name: Honeywell
     careers_url: https://careers.honeywell.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.honeywell.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Industrial IoT, automation."
     enabled: true
 
   - name: Boeing
     careers_url: https://jobs.boeing.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.boeing.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Aerospace, defense."
     enabled: true
 
   - name: Lockheed Martin
     careers_url: https://lockheedmartin.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:lockheedmartin.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Aerospace, defense."
     enabled: true
 
   - name: Northrop Grumman
     careers_url: https://northropgrumman.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:northropgrumman.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Aerospace, defense."
     enabled: true
@@ -762,42 +762,42 @@ tracked_companies:
 
   - name: Nike
     careers_url: https://jobs.nike.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:jobs.nike.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Sports, digital, AI personalization."
     enabled: true
 
   - name: Target
     careers_url: https://corporate.target.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:corporate.target.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer"'
     notes: "Top H1B sponsor. Retail tech."
     enabled: true
 
   - name: Walmart
     careers_url: https://careers.walmart.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.walmart.com "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Retail tech, @WalmartLabs."
     enabled: true
 
   - name: Procter & Gamble
     careers_url: https://pgcareers.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:pgcareers.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Consumer goods + digital."
     enabled: true
 
   - name: Coca-Cola
     careers_url: https://careers.coca-colacompany.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.coca-colacompany.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Consumer goods + digital tech."
     enabled: true
 
   - name: PepsiCo
     careers_url: https://pepsicojobs.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:pepsicojobs.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Consumer goods + digital."
     enabled: true
@@ -806,21 +806,21 @@ tracked_companies:
 
   - name: ExxonMobil
     careers_url: https://corporate.exxonmobil.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:corporate.exxonmobil.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Energy + digital transformation."
     enabled: true
 
   - name: Chevron
     careers_url: https://careers.chevron.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:careers.chevron.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Energy + tech."
     enabled: true
 
   - name: Shell
     careers_url: https://shell.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:shell.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Energy + digital."
     enabled: true
@@ -829,28 +829,28 @@ tracked_companies:
 
   - name: Tesla
     careers_url: https://tesla.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:tesla.com/careers "Software Engineer" OR "Backend Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. EVs, Autopilot, AI."
     enabled: true
 
   - name: General Motors
     careers_url: https://search-careers.gm.com
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:search-careers.gm.com "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. EVs, Cruise AV, digital."
     enabled: true
 
   - name: Ford
     careers_url: https://corporate.ford.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:corporate.ford.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. EVs, Ford Pro digital."
     enabled: true
 
   - name: Stellantis
     careers_url: https://stellantis.com/careers
-    scan_method: websearch
+    scan_method: playwright
     scan_query: 'site:stellantis.com/careers "Software Engineer" OR "AI Engineer" OR "ML Engineer"'
     notes: "Top H1B sponsor. Jeep, RAM, Chrysler, EVs."
     enabled: true
